@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import React, {useEffect, useState} from 'react';
+import {useSelector} from 'react-redux';
 import Loader from './components/ui/loader/loader';
 import FilterGroup from './components/ui/filterGroup';
 import CitiesTable from './components/ui/citiesTable';
 import Pagination from './components/common/pagination';
 import configFile from './config.json';
-import { getCitiesData } from './store/citiesSlice';
-import { itemsDBTransform } from './utils/itemsDBTransform';
-import { filterItems } from './utils/filter';
-import { sortItems } from './utils/sort';
-import { paginate } from './utils/paginate';
+import {getCitiesData} from './store/citiesSlice';
+import {itemsDBTransform} from './utils/itemsDBTransform';
+import {filterItems} from './utils/filter';
+import {sortItems} from './utils/sort';
+import {paginate} from './utils/paginate';
 
 function App() {
     const cities = useSelector(getCitiesData());
@@ -17,8 +17,8 @@ function App() {
     
     const [currentPage, setCurrentPage] = useState(1);
     const [filterQuery, setFilterQuery] = useState(configFile.initialFilterQuery);
-    const [sortBy, setSortBy] = useState({ path: 'name', order: 'asc' });
-    const pageSize = 10;
+    const [sortBy, setSortBy] = useState({path: 'name', order: 'asc'});
+    const pageSize = 5;
     
     useEffect(() => {
         setCurrentPage(1);
