@@ -1,0 +1,20 @@
+{
+  "apiEndpoint": "/api",
+  "initialFilterQuery": {
+    "column": "name",
+    "condition": "include",
+    "filterValue": ""
+  },
+  "columns": {
+    "date": "Дата",
+    "name": "Название",
+    "quantity": "Количество",
+    "distance": "Расстояние"
+  },
+  "conditions": {
+    "equal": "Равно",
+    "include": "Содержит",
+    "more": "Больше",
+    "less": "Меньше"
+  }
+}
