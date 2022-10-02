@@ -13,7 +13,7 @@
     "heroku-postbuild": "npm install && npm run install-client && npm run build"
   },
   "engines": {
-    "node": "14.17.5"
+    "node": "16.14.1"
   },
   "author": "Suntsov Ivan",
   "license": "ISC",
