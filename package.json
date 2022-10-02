@@ -12,7 +12,10 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm install && npm run install-client && npm run build"
   },
-  "author": "",
+  "engines": {
+    "node": "14.17.5"
+  },
+  "author": "Suntsov Ivan",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
